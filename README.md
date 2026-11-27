@@ -1,56 +1,32 @@
 # IranSmartBIM
 
-> AI-Powered Building Design Platform for Iran
+> Modular BIM and construction office platform focused on Iranian workflows.
 
-IranSmartBIM is an open, modular Building Information Modeling (BIM) platform focused on Iranian National Building Regulations.
+IranSmartBIM is an open, modular platform for building design, quantity takeoff, cost estimation, project controls and construction-office workflows.
 
-## Features
+## Available application packages
 
-- Architectural Design
-- Structural Design
-- Quantity Takeoff (BOQ)
-- Cost Estimation
-- Construction Scheduling
-- BIM Model
-- IFC Export
-- PDF Reports
-- AI Assistant
-- 3D Viewer
-- National Building Code Engine
+### Office Professional v0.9.3
 
-## Technology
+A Persian desktop application for quantity surveying and contractor-office workflows is available in [releases/v0.9.3](releases/v0.9.3/).
 
-- Python 3.13
-- PySide6
-- FastAPI
-- OpenCascade
-- IfcOpenShell
-- OpenSeesPy
-- PostgreSQL
+It includes:
+- Multi-project and contract management
+- Iran 1404 Abniyeh pricebook import/search
+- Quantity takeoff and cost estimation
+- Contract coefficients, waste, transport and direct costs
+- Interim statement periods and archived statement snapshots
+- Project payment register
+- Excel/PDF reports
+- Windows build scripts and CI workflows
 
-## Project Status
+See [the v0.9.3 release notes](releases/v0.9.3/RELEASE_NOTES.md) and [release package README](releases/v0.9.3/README.md).
 
-🚧 Under Development
+**Validation:** 13 automated tests passed; the five-storey regression scenario reconciles estimate and cumulative statements with zero Rial difference. GUI launch and native Windows EXE generation still need validation on Windows.
 
-## Repository Structure
+## Existing modular platform skeleton
 
-```
-src/
-tests/
-docs/
-resources/
-plugins/
-```
-
-## Installation
-
-```bash
-git clone https://github.com/<username>/IranSmartBIM.git
-
-cd IranSmartBIM
-
-pip install -e .
-```
+The repository's original modular architecture remains under `src/`, with tests and project documentation alongside it. The Office Professional desktop package is published separately under `releases/` to avoid silently replacing unrelated modules.
 
 ## License
 
